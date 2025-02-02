@@ -63,7 +63,7 @@ function M.draw()
 
         M.sections_data = {}
 
-        local draw_ctx = { width = view.View.width }
+        local draw_ctx = { width = view.get_width() }
 
         for section_index, section_data in pairs(config.sections) do
             local section = utils.resolve_section(section_index, section_data)
