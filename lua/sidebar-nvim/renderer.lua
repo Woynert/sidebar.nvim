@@ -174,6 +174,7 @@ function M.draw(sections_data)
             if config.hide_statusline then
                 api.nvim_win_set_option(view.get_winnr(), "statusline", "%#NonText#")
             end
+            api.nvim_win_set_option(view.get_winnr(), "signcolumn", "no")
         end
 
         return section_line_indexes
